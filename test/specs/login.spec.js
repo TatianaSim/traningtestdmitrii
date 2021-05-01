@@ -12,8 +12,8 @@ describe('Auth', () => {
 
         it('user logs in with valid data', () => {
         // LoginPage.clickLoginButton.click();
-        LoginPage.setLogin('eqpqtat@gmail.com');
-        LoginPage.setPassword('zaqqazx');
+        LoginPage.setLogin(process.env.LOGIN);
+        LoginPage.setPassword(process.env.PASSWORD);
         LoginPage.clickSubmitButton();
         ProfilePage.isOpen();
     });
